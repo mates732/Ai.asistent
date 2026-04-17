@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>recepce.tech - AI Voice Receptionist</title>
-    <meta name="description" content="Inteligentní hlasová AI, která odbaví vaše hovory." />
-    <link rel="stylesheet" crossorigin href="assets/index-BUKg9ZVv.css">
+    <link rel="stylesheet" crossorigin href="index-BUKg9ZVv.css">
   </head>
-  <body style="margin: 0; padding: 0; background-color: #000;">
-    <div id="root"></div>
-    <script type="module" crossorigin src="assets/index-D7Ue5Izk.js"></script>
+  <body style="margin: 0; padding: 0; background-color: #000; color: white;">
+    <div id="root">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        Načítám AI asistentku...
+      </div>
+    </div>
+
+    <script type="module" crossorigin src="index-D7Ue5Izk.js"></script>
+
+    <script>
+      console.log("HTML načteno, hledám JS soubory...");
+      window.onerror = function(msg, url, line) {
+        console.error("Chyba při startu: " + msg + " na řádku: " + line);
+      };
+    </script>
   </body>
 </html>
